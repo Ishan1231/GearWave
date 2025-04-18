@@ -30,3 +30,8 @@ Makefile                              :contentReference[oaicite:1]{index=1}
 
 # Miscellaneous
 *.log                                 :contentReference[oaicite:3]{index=3}
+FileTree.txt
+
+# Directories
+/build/
+/.vscode/

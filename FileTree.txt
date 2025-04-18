@@ -1,27 +1,41 @@
 GearWave/
-.vscode/
-├── settings.json              # VSCode settings specific to the project
-├── launch.json                # Debug configurations for launching applications
-├── tasks.json                 # Tasks for compiling, building, etc.
-├── extensions.json            # Recommended VSCode extensions for the project
-|                              # VSCode settings (optional for CLion users)
+├── .vscode/                   # VSCode settings (optional for CLion users)
+│   ├── launch.json            # VSCode debug configuration (optional)
+│   ├── tasks.json             # VSCode tasks (optional)
+│   ├── settings.json          # VSCode editor and workspace settings (optional)
 ├── build/                     # CMake build output (not committed)
 ├── cmake/                     # CMake modules/helpers
 ├── CMakeLists.txt             # Root build configuration
 ├── include/                   # Public C++ headers
-│   └── gearwave/
+│   └── gearwave/              # All your public headers go here
+│       ├── core.h
+│       ├── renderer.h
+│       ├── physics.h
+│       └── ...
+├── lib/                       # Library files (static, dynamic .dylib, etc.)
+│   ├── libsomeLibrary.dylib   # Example of a .dylib file
+│   └── ...
 ├── src/                       # Engine source code
 │   ├── core/
+│   │   ├── core.cpp
+│   │   └── ...
 │   ├── renderer/
+│   │   ├── renderer.cpp
+│   │   └── ...
 │   ├── physics/
+│   │   ├── physics.cpp
+│   │   └── ...
 │   ├── audio/
 │   ├── scripting/
 │   └── ...
 ├── external/                  # Vendored libraries (GLAD, GLFW, etc.)
 │   ├── glad/
-│   └── glfw/
+│   ├── glfw/
+│   └── ...
 ├── tests/                     # Unit tests
+│   └── ...
 ├── docs/                      # Documentation
+│   └── ...
 ├── assets/                    # Project-wide assets
 │   ├── animations/
 │   ├── audio/
@@ -35,8 +49,13 @@ GearWave/
 │   ├── shaders/
 │   └── textures/
 ├── examples/                  # Example games or scenes
+│   └── ...
 ├── tools/                     # Tools (like converters, editors, etc.)
+│   └── ...
 ├── MLResults/                 # Output from ML modules (if used)
+│   └── ...
+├── lldb-mi/                   # Required for debugging with VSCode (lldb-mi)
+│   └── lldb-mi                 # Specific binary or scripts related to lldb-mi
 ├── README.md                  # Project overview
 ├── .gitignore                 # Ignore build outputs, binaries, etc.
 └── LICENSE                    # Open source license (MIT, etc.)
