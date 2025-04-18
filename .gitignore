@@ -35,3 +35,4 @@ FileTree.txt
 # Directories
 build/
 .idea/
+cmake-*
