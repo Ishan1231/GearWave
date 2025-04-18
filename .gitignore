@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# C++ object files and precompiled headers
 *.o
 *.obj
-
-# Precompiled Headers
+*.lo
 *.gch
-*.pch
+*.pch                                 :contentReference[oaicite:0]{index=0}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# CMake build artifacts
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+cmake_install.cmake
+Makefile                              :contentReference[oaicite:1]{index=1}
 
-# Fortran module files
-*.mod
-*.smod
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# VSCode workspace settings (excluding recommended extensions)
+/.vscode/*
+!.vscode/extensions.json              :contentReference[oaicite:2]{index=2}
 
-# Executables
+# LLDB Machine Interface (if vendored)
+/lldb-mi/
+
+# Windows binaries and caches
 *.exe
-*.out
-*.app
+*.pdb
+
+# Miscellaneous
+*.log                                 :contentReference[oaicite:3]{index=3}

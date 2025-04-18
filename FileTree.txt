@@ -1,0 +1,42 @@
+GearWave/
+.vscode/
+├── settings.json              # VSCode settings specific to the project
+├── launch.json                # Debug configurations for launching applications
+├── tasks.json                 # Tasks for compiling, building, etc.
+├── extensions.json            # Recommended VSCode extensions for the project
+|                              # VSCode settings (optional for CLion users)
+├── build/                     # CMake build output (not committed)
+├── cmake/                     # CMake modules/helpers
+├── CMakeLists.txt             # Root build configuration
+├── include/                   # Public C++ headers
+│   └── gearwave/
+├── src/                       # Engine source code
+│   ├── core/
+│   ├── renderer/
+│   ├── physics/
+│   ├── audio/
+│   ├── scripting/
+│   └── ...
+├── external/                  # Vendored libraries (GLAD, GLFW, etc.)
+│   ├── glad/
+│   └── glfw/
+├── tests/                     # Unit tests
+├── docs/                      # Documentation
+├── assets/                    # Project-wide assets
+│   ├── animations/
+│   ├── audio/
+│   ├── fonts/
+│   ├── models/
+│   ├── palettes/
+│   ├── prefabs/
+│   ├── resources/
+│   ├── scenes/
+│   ├── scripts/
+│   ├── shaders/
+│   └── textures/
+├── examples/                  # Example games or scenes
+├── tools/                     # Tools (like converters, editors, etc.)
+├── MLResults/                 # Output from ML modules (if used)
+├── README.md                  # Project overview
+├── .gitignore                 # Ignore build outputs, binaries, etc.
+└── LICENSE                    # Open source license (MIT, etc.)
