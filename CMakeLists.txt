@@ -33,6 +33,3 @@ target_link_libraries(gearwave
     ${GLFW_LIB}
     ${OpenGL_LIBRARY}
 )
-
-.vscode/
-build/

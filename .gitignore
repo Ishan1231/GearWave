@@ -33,5 +33,5 @@ Makefile                              :contentReference[oaicite:1]{index=1}
 FileTree.txt
 
 # Directories
-/build/
-/.vscode/
+build/
+.vscode/
