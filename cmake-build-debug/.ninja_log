@@ -1,0 +1,6 @@
+# ninja log v6
+1	59	1745016900184641300	build.ninja	bfb4346a66290a70
+5	197	1745016549928080214	CMakeFiles/gearwave.dir/src/core/main.cpp.o	ddbeb35280766133
+1	62	1745016900184641300	build.ninja	bfb4346a66290a70
+5	222	1745016900196294572	CMakeFiles/gearwave.dir/external/glad/src/glad.c.o	c1e7eda954013924
+223	332	1745016900413838427	gearwave/gearwave	696e25e0f9c3cdd9

@@ -1,0 +1,3 @@
+/Users/ishan/CLionProjects/GearWave/cmake-build-debug/CMakeFiles/gearwave.dir
+/Users/ishan/CLionProjects/GearWave/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ishan/CLionProjects/GearWave/cmake-build-debug/CMakeFiles/rebuild_cache.dir

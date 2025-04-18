@@ -34,3 +34,4 @@ FileTree.txt
 
 # Directories
 build/
+.idea/
