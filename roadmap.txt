@@ -1,0 +1,90 @@
+GearWave Engine: Combined Learning & Project Roadmap
+
+- Summary:
+  - Learn Modern OpenGL in parallel with building GearWave.
+  - Progress through four game milestones: Pong, 2D SMB clone, basic 3D scene, 3D combat demo.
+  - Refactor engine into modular architecture with replaceable backends (OpenGL, Vulkan, Metal, etc.).
+  - Each week and milestone adds features to GearWave, ensuring steady, practical progress.
+
+Part 1: Weekly OpenGL + Engine Sprints (5 Weeks)
+
+- Week 1: Hello Triangle, GL Context & GLFW Window
+  - Day 1: Set up GLFW + GLAD, render a colored triangle.
+  - Day 2: Refactor triangle code into a Renderer module; add initialization error logging.
+  - Day 3: Handle window resizing, viewport adjustments.
+  - Day 4: Wrap GLFW window creation in a WindowManager class.
+  - Day 5: Abstract input handling for keyboard and mouse events.
+  - Day 6: Integrate a basic game loop (init, update, draw, cleanup).
+  - Day 7: Review & refactor all Week 1 code into GearWave’s Core module.
+
+- Week 2: Shaders & Shader Program
+  - Compile/link vertex and fragment shaders.
+  - Create a Shader class to load, compile, and manage GLSL programs.
+  - Add console logging for shader compile/link errors.
+  - Implement uniform upload helpers (floats, vectors, matrices).
+  - Test with simple color‑changing shader in GearWave.
+
+- Week 3: Vertex Buffers, VAO, VBO, EBO
+  - Create Buffer and VertexArray wrapper classes.
+  - Load geometry data (triangles, quads) into GPU buffers.
+  - Render indexed meshes using ElementBuffer.
+  - Refactor into Mesh and MeshRenderer subsystems.
+
+- Week 4: Textures & Coordinate Systems
+  - Load textures (STB_Image integration).
+  - Create a Texture2D class for binding and parameter settings.
+  - Implement orthographic projection matrix and pass to shaders.
+  - Render a textured quad; test sprite rendering.
+
+- Week 5: Camera, Transformations & Lighting
+  - Implement a Camera class (position, view, projection).
+  - Integrate basic Phong lighting (ambient, diffuse, specular).
+  - Add camera controls (WASD movement, mouse look).
+  - Render a lit cube and move the camera around.
+
+Part 2: Game Milestones & Engine Growth
+
+- Pong (Weeks 1–2)
+  - Week 1:
+    - Render 2D paddles using textured quads.
+    - Move paddles via keyboard input.
+    - Detect and clamp to screen bounds.
+    - Engine: Abstract input via IInput interface; add paddle physics component.
+  - Week 2:
+    - Ball with velocity, bounce logic, score UI.
+    - Engine: Add ECS collision system & simple UI text rendering.
+
+- Super Mario‑Style 2D Clone (Weeks 3–6)
+  - Week 3: Tilemap loader (CSV or JSON), render static level.
+  - Week 4: Sprite sheet & animation system; animate player idle and run.
+  - Week 5: Player physics (gravity, jump, tile collision).
+  - Week 6: Enemies with basic AI (patrol), health/power‑ups, level transitions.
+
+- Basic 3D Scene (Weeks 7–9)
+  - Week 7: Enable depth testing; render a colored 3D cube; perspective projection.
+  - Week 8: Integrate OBJ loader; render a custom mesh.
+  - Week 9: Camera orbit controls; simple directional lighting.
+
+- 3D Combat Demo (Weeks 10–13)
+  - Week 10: Load & play skeletal animations (glTF); implement animation blending.
+  - Week 11: Combat system: attack states & hit detection.
+  - Week 12: Particle system for hit effects.
+  - Week 13: UI overlays (health bars, damage numbers); polish shaders (bloom, tone mapping).
+
+Part 3: Modular, Replaceable Backends
+
+- Core Module:
+  - ECS, Logging, ResourceManager (shaders, textures, models).
+- Graphics API‑Agnostic Module:
+  - Define IRenderer interface (Initialize, DrawMesh, Shutdown).
+  - SceneGraph and Material classes that use IRenderer.
+- Graphics API‑Specific Plugins:
+  - OpenGLRenderer: implements IRenderer using GLAD + GLFW.
+  - (Future) VulkanRenderer, MetalRenderer, Direct3DRenderer as plugins.
+- Subsystems Abstractions:
+  - IAudio, IFileSystem, IInput, IPhysics interfaces in Core.
+  - Default implementations (StdFileSystem, custom AudioSystem).
+  - Optionally integrate SDL2 or FMOD later.
+- Plugin/Factory Pattern:
+  - Backends export a CreateRenderer() function.
+  - Load via dlopen/LoadLibrary or CMake add_subdirectory for static linking.
