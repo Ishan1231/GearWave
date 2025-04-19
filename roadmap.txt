@@ -15,7 +15,7 @@ Part 1: Weekly OpenGL + Engine Sprints (5 Weeks)
   - Day 4: Wrap GLFW window creation in a WindowManager class.
   - Day 5: Abstract input handling for keyboard and mouse events.
   - Day 6: Integrate a basic game loop (init, update, draw, cleanup).
-  - Day 7: Review & refactor all Week 1 code into GearWave’s Core module.
+  - Day 7: Review & refactor all Week  1 code into GearWave’s Core module.
 
 - Week 2: Shaders & Shader Program
   - Compile/link vertex and fragment shaders.
@@ -44,7 +44,7 @@ Part 1: Weekly OpenGL + Engine Sprints (5 Weeks)
 
 Part 2: Game Milestones & Engine Growth
 
-- Pong (Weeks 1–2)
+- Pong (Weeks1–2)
   - Week 1:
     - Render 2D paddles using textured quads.
     - Move paddles via keyboard input.
@@ -54,24 +54,24 @@ Part 2: Game Milestones & Engine Growth
     - Ball with velocity, bounce logic, score UI.
     - Engine: Add ECS collision system & simple UI text rendering.
 
-- Super Mario‑Style 2D Clone (Weeks 3–6)
-  - Week 3: Tilemap loader (CSV or JSON), render static level.
-  - Week 4: Sprite sheet & animation system; animate player idle and run.
-  - Week 5: Player physics (gravity, jump, tile collision).
-  - Week 6: Enemies with basic AI (patrol), health/power‑ups, level transitions.
+- Super Mario‑Style 2D Clone (Weeks  3–6)
+  - Week  3: Tilemap loader (CSV or JSON), render static level.
+  - Week  4: Sprite sheet & animation system; animate player idle and run.
+  - Week  5: Player physics (gravity, jump, tile collision).
+  - Week  6: Enemies with basic AI (patrol), health/power‑ups, level transitions.
 
-- Basic 3D Scene (Weeks 7–9)
-  - Week 7: Enable depth testing; render a colored 3D cube; perspective projection.
-  - Week 8: Integrate OBJ loader; render a custom mesh.
-  - Week 9: Camera orbit controls; simple directional lighting.
+- Basic 3D Scene (Weeks  7–9)
+  - Week  7: Enable depth testing; render a colored 3D cube; perspective projection.
+  - Week  8: Integrate OBJ loader; render a custom mesh.
+  - Week  9: Camera orbit controls; simple directional lighting.
 
-- 3D Combat Demo (Weeks 10–13)
-  - Week 10: Load & play skeletal animations (glTF); implement animation blending.
-  - Week 11: Combat system: attack states & hit detection.
-  - Week 12: Particle system for hit effects.
-  - Week 13: UI overlays (health bars, damage numbers); polish shaders (bloom, tone mapping).
+- 3D Combat Demo (Weeks  10–13)
+  - Week  10: Load & play skeletal animations (glTF); implement animation blending.
+  - Week  11: Combat system: attack states & hit detection.
+  - Week  12: Particle system for hit effects.
+  - Week  13: UI overlays (health bars, damage numbers); polish shaders (bloom, tone mapping).
 
-Part 3: Modular, Replaceable Backends
+Part  3: Modular, Replaceable Backends
 
 - Core Module:
   - ECS, Logging, ResourceManager (shaders, textures, models).
