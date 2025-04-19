@@ -55,21 +55,21 @@ Part 2: Game Milestones & Engine Growth
     - Engine: Add ECS collision system & simple UI text rendering.
 
 - Super Mario‑Style 2D Clone (Weeks  3–6)
-  - Week  3: Tilemap loader (CSV or JSON), render static level.
-  - Week  4: Sprite sheet & animation system; animate player idle and run.
-  - Week  5: Player physics (gravity, jump, tile collision).
-  - Week  6: Enemies with basic AI (patrol), health/power‑ups, level transitions.
+  - Week 3: Tilemap loader (CSV or JSON), render static level.
+  - Week 4: Sprite sheet & animation system; animate player idle and run.
+  - Week 5: Player physics (gravity, jump, tile collision).
+  - Week 6: Enemies with basic AI (patrol), health/power‑ups, level transitions.
 
 - Basic 3D Scene (Weeks  7–9)
-  - Week  7: Enable depth testing; render a colored 3D cube; perspective projection.
-  - Week  8: Integrate OBJ loader; render a custom mesh.
-  - Week  9: Camera orbit controls; simple directional lighting.
+  - Week 7: Enable depth testing; render a colored 3D cube; perspective projection.
+  - Week 8: Integrate OBJ loader; render a custom mesh.
+  - Week 9: Camera orbit controls; simple directional lighting.
 
 - 3D Combat Demo (Weeks  10–13)
-  - Week  10: Load & play skeletal animations (glTF); implement animation blending.
-  - Week  11: Combat system: attack states & hit detection.
-  - Week  12: Particle system for hit effects.
-  - Week  13: UI overlays (health bars, damage numbers); polish shaders (bloom, tone mapping).
+  - Week 10: Load & play skeletal animations (glTF); implement animation blending.
+  - Week 11: Combat system: attack states & hit detection.
+  - Week 12: Particle system for hit effects.
+  - Week 13: UI overlays (health bars, damage numbers); polish shaders (bloom, tone mapping).
 
 Part  3: Modular, Replaceable Backends
 
