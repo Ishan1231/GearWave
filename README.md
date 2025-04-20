@@ -27,3 +27,5 @@ cd GearWave
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
+
+NOTE: NEED SDL2 INSTALLED TO RUN.
