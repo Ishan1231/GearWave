@@ -58,7 +58,9 @@ int main()
         processInput(window);
 
         // Rendering
-        
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // State setting function
+        glClear(GL_COLOR_BUFFER_BIT); // State using function
+
         // Check/Call events and swap buffers
         glfwSwapBuffers(window); // OpenGL uses a buffer system to more efficienty draw and swaps between them and draws on the one not displayed 
         glfwPollEvents(); 
